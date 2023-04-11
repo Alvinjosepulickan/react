@@ -1,0 +1,65 @@
+1.Install create-react-app by running the following command:
+    npm install -g create-react-app
+2.create a React app using the below command:
+    create-react-app my-app
+        or
+    npx create-react-app my-app
+
+
+                                                                    where my-app is the  react app name
+
+
+folder contents
+    node_modules	    All the node module dependencies are created in this folder
+    public	            This folder contains the public static assets of the application
+    public/index.html	This is the first page that gets loaded when you run the application
+    src	                All application related files/folders are created in this folder
+    src/index.js	    This is the entry point of the application
+    package.json	    Contains the dependencies of the React application
+
+
+
+3.To run the application, navigate to the folder my-app and run the command as shown below
+    npm start
+
+
+
+
+
+
+Observe the file src/index.js 
+
+
+
+        ReactDOM.render(
+          <React.StrictMode>
+            <App />
+          </React.StrictMode>,
+          document.getElementById('root')
+        );​​​​​​​
+ReactDOM.render is used to render an element or component to the virtual DOM.
+
+        The first argument specifies what needs to be rendered
+        The second argument specifies where to render.
+        The root element is present inside index.html
+
+You can render elements also using the ReactDOM.render method as shown below
+    ReactDOM.render(<h1>Hello React!<h1/>, document.getElementById('root'));
+
+
+
+
+
+
+
+
+
+React.StrictMode: It is a helper component which helps the developers in identifying the problems in the application.
+                The React.StrictMode, component does not render any visible UI
+
+StrictMode helps with the below :
+        Identifying components with unsafe lifecycles
+        Warning about legacy string ref API usage
+        Warning about deprecated findDOMNode usage
+        Detecting unexpected side effects
+        Detecting legacy context API

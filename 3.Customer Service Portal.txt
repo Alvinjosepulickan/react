@@ -1,0 +1,20 @@
+1. copy appcode from https://academy.onwingspan.com/common-content-store/Shared/Shared/Public/lex_auth_0126442476731187202074_shared/web-hosted/assets/customerserviceportal1646929165944.zip
+2.creating node modules
+    npm install
+3.start the JSON server by running the below command
+    npm install -g json-server
+    json-server --watch db.json --port 4000
+4. to  start app 
+    npm start
+
+
+
+
+
+Customer Service Portal
+    Customer Service Portal is an application built using React.
+    Functionalities
+        1. Login – The customer can login by entering the credentials
+        2. PurchasedItems – Displays the various products bought by the customer. 
+        3. Feedback – The customer can provide feedback to the products they purchased
+ 

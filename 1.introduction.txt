@@ -1,0 +1,28 @@
+What is React
+1. React JS is a JavaScript library for creating user interfaces
+2. ReactJS Optimizes the DOM manipulation by writing very simple code
+3. React is used for applications where the data keeps changing very frequently
+
+Features​​​​​​​
+1. Component based architecture
+2. Virtual DOM
+3.Unidirectional data flow
+4. JSX 
+5. SEO performance
+
+
+The key features of React are:
+    Component-based architecture: 
+        A Component is the smallest unit in a React application. 
+        Anything that you want to render on the browser can be rendered through components. 
+        Components help in maintainability and re-usability.
+    Virtual DOM: 
+        React uses virtual DOM concept for DOM manipulation which improves the performance of the application
+    Unidirectional data flow:  
+        React’s one-way data flow (also called one-way binding) keeps everything modular and fast and easy for debugging.
+    JSX syntax: 
+        React used JSX syntax which is similar to XML and HTML syntax which makes it easy for writing markup and binding events in components 
+    SEO performance: 
+        The SEO performance can be improved using the server-side rendering concept. 
+        We can develop isomorphic applications using React which increases the SEO performance.
+ 
