@@ -1,0 +1,63 @@
+JSX
+
+JSX is a JavaScript syntax extension.
+It is a replacement for writing pure JavaScript code
+Functional components return JSX elements 
+Multiple JSX elements must be wrapped within a container element using React.Fragment or empty tags
+JavaScript expressions which need to be evaluated must be wrapped within curly braces
+                       
+Conditional Rendering
+
+JSX elements can be rendered based on condition using if-else or ternary operator
+List of elements can be rendered using map method
+
+
+
+
+
+
+
+
+
+
+
+
+JSX has been introduced in React to create elements that are very easy to read and write, which makes the component's code simple and understandable
+
+JSX is a special syntax introduced in ReactJS to write elements of components. 
+It is syntactically identical to HTML and hence it can be easily read and written. 
+Code written using JSX helps in visualizing the DOM structure easily.
+As the browser does not understand JSX code, this gets converted to JavaScript using the plugins of the babel.
+
+
+
+As per the JSX syntax, all the adjacent elements must be wrapped in an enclosing tag 
+    i.e. there should be only one outermost element
+
+By adhering to JSX syntax the <div> tag can be used for grouping the elements and this introduces an extra and unnecessary node into the DOM. 
+As a solution to this, React Fragments are introduced which is a common pattern in React for a component to return multiple elements. 
+React Fragments allows to group a list of React elements without adding any extra node to the DOM.
+
+
+You can use empty tags instead of React.Fragment
+
+
+
+                        <div>
+                        </div>
+
+                        <React.Fragment>
+                        </React.Fragment>
+
+
+                        <>
+                        </>
+
+
+
+JavaScript expressions to be evaluated should be wrapped within curly braces as follows:
+        <h1> { Expression to be evaluated } </h1>
+Content which has to be displayed as is will be written in double quotes, wrapped within curly braces as follows:
+        <h1> {" Content to be displayed "} </h1>
+
+        

@@ -1,0 +1,1 @@
+In React, you can apply the styling using CSS or any styling libraries/frameworks like bootstrap, react-bootstrap, material UI etc.

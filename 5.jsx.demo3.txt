@@ -1,0 +1,2 @@
+in App.js of my-reactapp
+    using javascript expression in jSX
