@@ -1,0 +1,54 @@
+There are 2 types of components that can be created in React
+    1. Class based components
+    2. Functional components
+
+Functional Components
+•    Created as a simple JavaScript function
+•    It just returns the HTML elements
+
+
+
+
+
+
+The functional component can be created as follows:
+
+                                import React from 'react';
+                                function App() {
+                                    return React.createElement("h1", {}, "Hello World!!!");
+                                }
+                                export default App;
+
+
+
+
+
+App - The component name should be in Pascal Casing
+React.createElement - helps to create an element in plain JavaScript
+
+
+
+
+
+In the code, React.createElement("h1", {}, "Hello World!!!");
+
+        h1 - is the HTML element to be used
+        { } - Attributes of an element can be mentioned
+        "Hello World!!!" - Content to be appended to the h1 element
+        export default App - App component must be exported so that it could be used in any other files
+        To display elements of a component, the component must be rendered.
+        For rendering a component, ReactDOM.render method is used as follows:
+        Syntax:
+
+                ReactDOM.render(<parameter 1/>, parameter 2); 
+
+
+
+
+index.js:
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import './index.css';
+    import App from './App';
+    ReactDOM.render(<App/>, document.getElementById('root'));
+    reportWebVitals();

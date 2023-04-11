@@ -1,0 +1,28 @@
+1. Create App component in App.js (in src/components folder)and create an element to render "Hello World" in the heading format as shown below:
+
+
+import React from 'react'
+function App () {
+    return React.createElement("h1", {}, "Hello World");
+}
+export default App;
+
+
+
+2.In index.js, render App component using the ReactDOM.render method as shown below:
+
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+reportWebVitals();
+

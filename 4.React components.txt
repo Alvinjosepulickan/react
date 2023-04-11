@@ -1,0 +1,46 @@
+You have the following challenges in developing this application:
+    1. Entire page will get re-rendered even when a section of the page (eg. feedback section) undergoes changes
+    2. You will have to re-write code for each item even though they have similar behavior
+    3. You will have to take additional care to make sure that the functionality of one part of the application do not interfere with another part
+
+If you implement the above wireframe by dividing them into components - encapsulating its own data and presentation logic then you can achieve modularity and re-usability.
+
+
+
+
+A React component is the fundamental unit of any React application. 
+They are capable of encapsulating data and view as a single unit. 
+These components can work in conjunction with each other.
+Components make code reusable, testing easy, and can take care of separation of concerns.
+The capability of creating own components is a major productivity boost to any web application development. 
+
+Here, in ReactJS, components reside in virtual DOM and these components will be available as nodes in actual DOM.
+
+Virtual DOM is an abstraction of actual DOM, where components are the nodes. We can programmatically modify virtual DOM by updating components. 
+These updates are internally handled by React and in turn, updated in actual DOM.
+React, rather than updating DOM directly, builds an abstract version of it called Virtual DOM.
+
+
+
+
+React component                                     virtual DOM                                                                 DOM
+
+    component1                                      Main component(prev tree)                                                    Document
+                                                        component1                                                                  Node 1
+                                                        component2                                                                  Node 2
+                                                        component3                                                                  Node 3
+    component2                                      Main component(new tree)                                                    
+                                                        component1
+                                                        component2
+                                                        component3
+    component3
+
+
+
+
+Whenever any updates happens in the application, the virtual DOM gets modified. 
+    React computes the difference between the previous virtual tree and the current virtual tree
+Based on these differences React will figure out how to make updates to the actual DOM efficiently
+React does all the computations in its abstracted DOM and updates the DOM tree accordingly
+Virtual DOM enhances performance and efficiency by minimizing expensive updates in the actual DOM
+Hence React is said to be a great performer because it manages a Virtual DOM
