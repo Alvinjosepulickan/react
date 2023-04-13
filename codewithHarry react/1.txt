@@ -1,0 +1,3 @@
+React is declarative
+    tell react what you want and it will create ui with DOM
+
