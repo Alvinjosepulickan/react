@@ -1,0 +1,33 @@
+At updating phase of a component, below methods are executed based on props or state being received and updates happens in a component:
+    static getDerivedStateFromProps()
+    shouldComponentUpdate()
+    render()
+    getSnapshotBeforeUpdate()
+    componentDidUpdate()
+
+ 
+
+shouldComponentUpdate(nextProps, nextState):
+
+Executed before rendering when new state or props are being received
+
+By default it will return true by calling componentDidUpdate() method. If it returns false componentDidUpdate() method will not be invoked
+
+In case we want to skip re-rendering, this method could be used by returning false, so this would skip re-rendering
+
+This method only exists as a performance optimization
+
+ 
+
+getSnapshotBeforeUpdate(prevProps, prevState):
+
+Invoked right before changes are made to the DOM
+
+It is recommended to return a value from this method which will be passed as a third parameter(as 'snapshot') to the componentDidUpdate()
+
+Once the updates flushed to the DOM, immediately next lifecycle method will be invoked
+
+
+componentDidUpdate(prevProps, prevState, snapshot):
+
+Invoked immediately after the changes are updated

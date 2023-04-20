@@ -1,0 +1,11 @@
+Lifecycle methods are needed in the following cases:
+•    For making an Ajax call, to set timer and to integrate with other frameworks
+•    To avoid unnecessary re-rendering of a component
+•    To update the component, based on the props changes
+•    For clearing the values when component is unmounted
+ 
+
+Every component will have following phases in its Lifecycle:
+    Mounting phase - when the component is mounted to DOM tree
+    Updating phase - when component is being updated with new state, new  props are being received
+    Unmounting phase - destroying component from DOM tree ​​​​​​​

@@ -1,1 +1,46 @@
 In React, you can apply the styling using CSS or any styling libraries/frameworks like bootstrap, react-bootstrap, material UI etc.
+Inline Styles in React Components should be specifed as shown below:
+
+<h1 style={{color:'green'}}>Welcome to React</h1>
+
+When you have CSS properties with multiple words like background-color, font-family etc, in React, those properties should be camelCased by removing hypen or using quotes as shown below
+
+<h1 style={{color:'green',fontFamily:'Verdana'}}>Welcome</h1>
+<h1 style={{color:'green','background-color':'yellow'}}>Welcome</h1>
+
+
+
+
+Modify the CSS file App.css within the src folder and create a class button within App.css file as shown below
+.button {
+  background-color:blue;
+  color:white;
+  border-radius:10px;
+  width:100px;
+  height:30px;
+}
+
+import './App.css';
+<button className="button">Submit</button>
+
+
+
+
+installing bootstrap
+
+npm install bootstrap 
+npm install react-bootstrap
+        re-useable front-end components. 
+        We can have the look-and-feel of Twitter Bootstrap, 
+            but with much cleaner code, 
+            via Facebook's React JS framework.
+installing Material-UI
+
+npm install @mui/material @emotion/react @emotion/styled
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
+
+<Button variant="warning"> Click here </Button>
+​​​​​​​<Typography variant="h4" gutterBottom>Welcome to React</Typography> 

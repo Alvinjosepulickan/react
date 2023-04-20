@@ -1,21 +1,62 @@
 import React from 'react'
 import logo from './logo.svg';
+import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
+import Typography from "@mui/material/Typography";
+import MaterialButton from "@mui/material/Button";
+import {useState} from 'react';
+import axios from 'axios';
 function App () {
   var x=31;
   var y=30;
+  const [name,setName] = useState("Jack")
+  const handleChange = ({name}) => {
+    if(name==="Jack")
+      setName("Jill")
+    }
   var result='false';
   if(x>y){
     result='true';
   }
-  var employees = [
-    { empId: 1234, name: "John", designation: "SE" },
-    { empId: 4567, name: "Tom", designation: "SSE" },
-    { empId: 8910, name: "Kevin", designation: "TA" },
-  ];
+  const baseURL = "https://www.google.com";
+  axios.get(' http://www.google.com')
+        .then(result => 
+            console.log("result.data")
+        )
+        .catch(error => 
+            this.setState({
+                error,
+                isLoading: false
+            })
+        );
+  debugger;
+  var  j
   return (
     <>
+    <div>
+      Your Name is: {name}<br/>
+      <button onClick={()=>handleChange({name})}>Change</button>
+    </div>
     <h3>ReactJS:</h3>
     <img src={logo} width="120" height="120" />
+    <h1 style={{ color: "green", fontFamily: "verdana" }}>
+        Welcome to React
+      </h1>
+      {/*inline*/}
+      <button className="button">Submit</button>
+      {/*boostrap*/}
+      <button className="btn btn-success">Submit</button>
+      {/*react-booytstrap*/}
+      <Button variant="">Submit</Button>
+      {/*material-ui */}
+      <Typography variant="h4" gutterBottom>
+        Welcome to React
+      </Typography>
+      <MaterialButton variant="contained" color="primary">
+        Submit
+      </MaterialButton>
+
     <p>
         {" "}
         React is a JavaScript library for creating User Interfaces, open sourced
@@ -35,17 +76,6 @@ function App () {
             <th>Designation</th>
           </tr>
         </thead>
-        <tbody>
-          {employees.map((employee) => {
-            return (
-              <tr key={employee.empId}>
-                <td>{employee.empId}</td>
-                <td>{employee.name}</td>
-                <td>{employee.designation}</td>
-              </tr>
-            );
-          })}
-        </tbody>
       </table>
       
     </>

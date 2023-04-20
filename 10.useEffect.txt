@@ -1,0 +1,29 @@
+Mounting phase : This is the phase where the component gets mounted to the DOM tree for the first time
+The most common use-case in real time applications is to make an API call to perform CRUD operations. The API calls should be made once the component is mounted to the DOM.
+To make API calls you can use useEffect hook
+
+
+    useEffect(()=>{
+            //implementation
+    },[array of dependencies])
+​​​​​​​
+1. No dependency
+useEffect(()=>{
+    //implementation
+}) 
+
+2.An Empty array
+​​​​​​​useEffect(()=>{
+   //implementation
+},[])
+
+3. Props or State 
+
+useEffect(()=>{
+   //implementation
+},[props,state])
+
+
+
+When you want to make API calls as soon as the component mounts and fetch some data then you need to pass the second argument as an empty array to the useEffect() method, 
+since you want the useEffect() method to be called only after the component mounts and not when the component updates.

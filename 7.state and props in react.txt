@@ -1,0 +1,22 @@
+In a real-time application, components must deal with dynamic data.
+This data could be something internal to the component or may be the data that is passed from another component. 
+To bind the data to the component, you need two JS objects i.e. state and props.
+
+
+What is State?
+
+The state is an initial value set for a component, which is used for interactivity.
+Using constructor, the state of a component is created and initialized using this.state as follows:
+
+constructor() {
+     super();
+	 this.state = { counter: 1 };
+}
+
+
+this.state.counter.
+
+As the user-defined component extends React.Component, 
+it becomes a child component of it. 
+Hence, whenever a child component has a constructor, it has to call the parent class's constructor using the super() method. 
+And super() method should be the first statement within a constructor.

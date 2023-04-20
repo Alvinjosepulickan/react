@@ -1,0 +1,38 @@
+useState():
+useState hook is used to add or initialize state value within a functional component. It is equivalent to this.state statement of Class component which is used to initialize the state value. This hook helps to preserve the state value of a component.
+
+Syntax - useState() can be written as follows:
+
+const [state, setState] = useState(initialState);
+ 
+
+useState() is a function which takes ‘initialState’ as the initial value for the state variable and returns 2 values.
+
+Where, ‘state’ is a state variable which holds the initial value passed to it i.e. ‘initialState’ and ‘setState’ is a function to update the ‘state’. 
+
+whenever we want to update the ‘state’ value then we can use the second parameter ‘setState’ which is returned from the useState() function, which is equivalent to this.setState statement of the Class component.
+
+Let us understand useState() from the below example:
+
+import React, {useState} from 'react';
+function App() {
+  const [name,setName] = useState("Jack")
+  return (
+    <div>
+      Your Name is: {name}
+      <button onClick={()=>setName("Jill")}>Change</button>
+    </div>
+  );
+}
+export default App;
+
+In the above example useState() hook helps to set the initial value as "Jack".
+
+Line 4: ‘name’ is the state of the component ‘App’. useState() returns a state ‘name’ with its initial value ‘Jack’ and ‘setName’ function.
+
+Line 8: When user clicks on the button, Change event gets fired and due to which ‘name’ state value gets updated to Jill through setName method execution.
+
+We can use useState() hook any number of times in any component to set multiple state variables as shown below:
+
+const [name,setName] = useState("Jack")
+const [age,setAge] = useState(0)

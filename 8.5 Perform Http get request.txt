@@ -1,0 +1,67 @@
+React by default does not provide any helper method to manage Ajax requests
+Any other third party JavaScript library can be used to handle Ajax requests
+API calls should be made after the component mounts using useEffect hook​​​​​​​
+Once the data is fetched, make it available to your component by setting the state of the component to trigger re-render using useState hook
+
+
+
+
+
+
+
+
+npm install axios
+
+
+
+
+Axios offers the following methods:
+
+axios.get()
+axios.post()
+axios.put()
+axios.delete()
+axios.patch()
+axios.options()
+
+Get request syntax
+
+axios.get('url')
+        .then(result => 
+           console.log(result.data)
+        )
+        .catch(error => 
+            console.log(error)
+        );
+
+Post request syntax
+
+axios.post('url', { data }).
+    then(result =>
+        console.log(result.data)
+    )
+    .catch(error =>
+        console.log(error)
+    );
+
+You can also use fetch for making API calls, but axios offers some advantages over fetch
+
+1. The response returned by axios is the response that you need, but with fetch you need to use .json method to get the actual response
+
+Axios output
+
+
+
+Fetch output
+
+
+
+2. Axios is more secure than fetch and protects from XSRF attacks
+
+3. Axios are supported by most of the browsers including Internet Explorer 8+
+
+4. Axios has better error handling
+
+For example, if you try to make the request to a non-existent JSON file employees1.json file 
+
+Axios returns

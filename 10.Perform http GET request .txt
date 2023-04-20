@@ -1,0 +1,32 @@
+npm install axios
+
+
+
+Axios offers the following methods:
+
+ 
+
+axios.get()
+axios.post()
+axios.put()
+axios.delete()
+axios.patch()
+axios.options()
+
+
+
+ axios.get('url')
+        .then(result => 
+           console.log(result.data)
+        )
+        .catch(error => 
+            console.log(error)
+        );
+
+axios.post('url', { data }).
+    then(result =>
+        console.log(result.data)
+    )
+    .catch(error =>
+        console.log(error)
+    );

@@ -1,0 +1,26 @@
+At mounting phase of a component, following methods which will be invoked:
+    constructor()
+    static getDerivedStateFromProps()
+    render()
+    componentDidMount()
+
+ 
+
+constructor(): Constructors are used only for the below 2 purposes which we have already seen in the state demo:
+    Initializing state of a component
+    For binding event handler methods to an instance
+
+ 
+
+static getDerivedStateFromProps(): getDerivedStateFromProps() is invoked right before the render method. This method is called both in mounting and updating phase. 
+
+ 
+
+render(): Every React component must have render() method. render() method should be a pure function which returns the same result every time it is called which means, it doesn't modify any component's state.
+
+ 
+
+componentDidMount():
+    Invoked immediately after the component is mounted to DOM tree
+    Now will have access to all the DOM nodes hence any initialization which requires DOM nodes should be done here
+    Best place for setting timers and handling Ajax request

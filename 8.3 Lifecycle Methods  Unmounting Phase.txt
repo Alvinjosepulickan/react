@@ -1,0 +1,5 @@
+componentWillUnmount() method will be invoked immediately before a component is unmounted and destroyed.
+    This method is used at the unmounting process of a component
+    This is the place for performing any necessary cleanup. e.g: any subscription which was created in componentDidMount()
+    A component can be unmounted from DOM using ReactDOM.unmountComponentAtNode()
+

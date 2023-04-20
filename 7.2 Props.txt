@@ -1,0 +1,20 @@
+When we want to pass any data from one component to another component, it is passed as a prop.
+
+Props allow us to pass data from one component to another component
+
+Props are immutable - a component cannot change its props however it is responsible for putting together
+
+Props can be accessed as this.props
+
+
+
+
+How to use props?
+
+Let's now learn how to pass data to a component:
+
+    <App initial = {10} />
+
+Here, we are passing a property 'initial' with a value '10', to a component App.
+
+In the component App, this property would be accessed as this.props.initial

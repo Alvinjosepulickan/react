@@ -1,0 +1,14 @@
+Every component will have following phases in its Lifecycle:
+    Mounting phase - when the component is mounted to DOM tree
+    Updating phase - when component is being updated with new state, new props are being received
+    Unmounting phase - destroying component from DOM tree
+    Error Handling - Handling errors within React Component
+
+ 
+
+Every phase in the lifecycle of a component has few methods which will be invoked during that phase of a component's lifecycle. We can override these methods to provide the desired functionality.
+These methods can be used in the following cases:
+    For making an Ajax call, to set timer and to integrate with other frameworks
+    To avoid unnecessary re-rendering of a component
+    To update the component, based on the props changes
+    For clearing the values when component is unmounted

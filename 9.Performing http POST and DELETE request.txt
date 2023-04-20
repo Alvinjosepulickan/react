@@ -1,0 +1,25 @@
+npm install -g json-server
+
+
+
+JSON file with name employees.json. This file consists of the data, that must be exposed by the REST API. CRUD endpoints are automatically created for objects in the JSON structure.       
+
+The JSON has of one ‘employees’ array which has two objects. Each employee object consists of properties: id, name and designation.
+
+
+
+
+
+Running the Server
+json-server --watch employees.json --port 4000
+GET    /employees
+GET    /employees/{id}
+POST   /employees
+PUT    /employees/{id}
+PATCH  /employees/{id}
+DELETE /employees/{id}
+
+
+
+
+demo

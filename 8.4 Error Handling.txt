@@ -1,0 +1,5 @@
+Error handling can be taken care in React using the below methods
+    static getDerivedStateFromError()  
+    componentDidCatch()
+    Error boundaries should be defined in order to catch errors occurring within the child components. Whenever a component crashes because of a JavaScript error, the error will be logged and fall back UI is displayed.
+    Error boundaries are nothing but class components which defines either getDerivedStateFromError or componentDidCatch method

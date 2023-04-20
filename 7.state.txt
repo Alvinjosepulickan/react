@@ -1,0 +1,9 @@
+State is a JavaScript object used to manage the data of an application.
+To associate state with components you can use useState hook
+
+useState():
+
+useState hook is used to add or initialize state value within a functional component. 
+This hook helps to preserve the state value of a component.
+
+const [count, setCount] = useState(0); 

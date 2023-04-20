@@ -1,0 +1,20 @@
+In React, ref provides a way to access the DOM node or the React elements, and helps in getting the value from the DOM.
+refs are to be used when we have the below requirements:
+    1. Integrating with third-party libraries, like D3 which has it's own DOM manipulation API's
+    2. To use media playbacks like audio, video. refs provide control over the DOM API.
+    3. Trigger imperative animations
+By using refs, we are deviating from the React way of handling data. In React we store data as state and when the state in updated component gets re-rendered. This follows a unidirectional data flow and the data is stored in a single source of truth i.e., state.
+
+You can create two types of forms in React:
+    1. Controlled component
+    2. Uncontrolled component
+
+Controlled component: In controlled components the input values are set to corresponding state variables and when the value changes, the state is updated accordingly.
+Uncontrolled component:  In an uncontrolled component, the form elements data is handled by the DOM and not by the state. 
+
+
+
+
+To create refs you can use useRef hook 
+let countRef = useRef(0)  
+input type="text" ref={countRef} />
