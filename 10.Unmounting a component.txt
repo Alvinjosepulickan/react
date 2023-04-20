@@ -1,0 +1,3 @@
+A component can be unmounted from DOM using ReactDOM.unmountComponentAtNode()
+
+ ReactDOM.unmountComponentAtNode( document.getElementById('root') );​​​​​​​
