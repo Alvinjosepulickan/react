@@ -1,0 +1,51 @@
+npm install react-router-dom
+
+
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+
+
+
+
+
+<BrowserRouter>: It is a primary component containing the entire routing configuration. 
+    It is a more popular one because it uses the HTML5 History API to keep track of your router history. 
+    All the routes should be wrapped within a container element such as div.
+
+<Route>: It is a prop of Router. 
+    It maps routes to our application’s component hierarchy using "path“ and "component" props and sets all navigational routes
+
+path: Maps to the path given in URL
+
+component: Contains component name to be rendered when the route is mapped
+
+exact: This property tells Route to match the exact path. In the below example Header component will render when the browser's location path matches exactly /
+
+
+
+
+
+
+
+
+
+<Router> 
+  <!--Configures route for main component i.e. Header-->
+	<div>
+ 	        <Route exact path = "/" component = {Header} />             
+	        <Route path = "/login" component = {Login} />  <!--Configures route for Login component--> 
+	        <Route path = "/home" component = {Home} />    <!--Configures route for Home component-->
+	</div> 
+</Router> 
+
+
+
+<Link to="/home"> Home </Link>
+<Link to="/login"> Login </Link>
+
+
+
+
+Header
+Home
+About
+ContactUs

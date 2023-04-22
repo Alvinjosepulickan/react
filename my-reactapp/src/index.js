@@ -6,10 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import Login from './Login'
 import Employees from './Employees';
 import Sample from './Sample';
+import Header from './Header';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Sample />
+    <Header />
     
 
   </React.StrictMode>

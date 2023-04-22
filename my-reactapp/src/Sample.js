@@ -1,5 +1,8 @@
 import {useState, useEffect} from 'react';
 import "bootstrap/dist/css/bootstrap.min.css"
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import React from 'react'; 
+import Employees from './Employees';
 function Sample() {
     const [name,setName] = useState("Jack")
     const [age,setAge] = useState(20)
@@ -12,6 +15,7 @@ function Sample() {
         <h1>Your Age is: {age} </h1><br/>
         <button onClick={()=>setName("Tom")}>Change Name</button>
         <button onClick={()=>setAge(age+1)}>Change Age</button>
+        
       </div>
     );
   }
